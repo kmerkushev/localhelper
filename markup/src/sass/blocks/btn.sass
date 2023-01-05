@@ -1,0 +1,60 @@
+.btn
+  font-size: $btn-font-size
+  color: $primary--text
+  background-color: $primary
+  padding: 0 30px
+  height: $btn-nav-height
+  border-radius: 100px
+  border: 2px solid $primary
+  text-decoration: none
+
+  &:hover
+    transition: all 0.3s ease-in-out
+    color: $accent--text
+    background-color: $accent
+    border: 2px solid $accent
+
+.btn__navigation
+  font-size: $btn-nav-font-size
+  color: $primary--text
+  background-color: $primary
+  padding: 0 30px
+  height: 50px
+  margin: auto
+  border-radius: 100px
+  border: 2px solid $primary
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &:hover
+    transition: all 0.3s ease-in-out
+    color: $accent--text
+    background-color: $accent
+    border: 2px solid $accent
+
+  &:active
+    transform: translateY(3px)
+
+.btn__accent
+  background-color: $accent
+  color: $accent--text
+  border: none
+
+  &:hover
+    transition: all 0.3s ease-in-out
+    background-color: $accent--light
+    border: none
+
+  &:hover
+    transition: all 0.3s ease-in-out
+    background-color: $accent--dark
+    border: none
+
+.btn__item
+  font-weight: bold
+
+@media (max-width: 480px)
+  .btn
+    padding: 17px 27px
+    font-size: $btn-font-size-mobile

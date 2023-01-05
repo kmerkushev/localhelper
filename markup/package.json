@@ -1,0 +1,48 @@
+{
+  "name": "local-helper",
+  "private": false,
+  "description": "LocalHelper",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-htmlacademy": "^1.1.4"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"src/sass/**/*.sass\" --syntax sass",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp styles",
+    "build-min": "gulp stylesMin && gulp scriptsMin",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "src/*.html",
+    "src/*.js",
+    "src/*.svg",
+    "src/sass/**/*.sass"
+  ],
+  "engines": {
+    "node": "10.16.3"
+  },
+  "dependencies": {
+    "gulp-jsmin": "^0.1.5",
+    "minify": "^9.1.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.57.1"
+  }
+}
